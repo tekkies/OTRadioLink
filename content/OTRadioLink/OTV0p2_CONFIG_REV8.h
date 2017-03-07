@@ -108,17 +108,20 @@ Author(s) / Copyright (s): Damon Hart-Davis 2013--2017
 // OK IN THIS CASE BECAUSE ALL COMMS SECURE.
 #define ENABLE_ALWAYS_TX_ALL_STATS
 // IF DEFINED: this unit will act as a thermostat controlling a local TRV (and calling for heat from the boiler), else is a sensor/hub unit.
-#define ENABLE_LOCAL_TRV
+#undef ENABLE_LOCAL_TRV
 // IF DEFINED: this unit supports CLI over the USB/serial connection, eg for run-time reconfig.
 #define ENABLE_CLI
 // IF DEFINED: there is run-time help available for the CLI.
-#define ENABLE_CLI_HELP
+#undef ENABLE_CLI_HELP
 // IF DEFINED: enable a full OpenTRV CLI.
 #define ENABLE_FULL_OT_CLI
 // IF DEFINED: enable and extended CLI with a longer input buffer for example.
-#define ENABLE_EXTENDED_CLI
+#undef ENABLE_EXTENDED_CLI
 // IF DEFINED: enable a full OpenTRV UI with normal LEDs etc.
 #define ENABLE_FULL_OT_UI
+// IF DEFINED: try to trim memory (primarily RAM, also code/Flash) space used.
+#define ENABLE_TRIMMED_MEMORY
+
 #endif
 
 
